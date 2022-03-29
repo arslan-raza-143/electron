@@ -1210,6 +1210,7 @@ steps-test-node: &steps-test-node
     - attach_workspace:
           at: .
     - *step-depot-tools-add-to-path
+    - *step-setup-env-for-build
     - *step-electron-dist-unzip
     - *step-setup-linux-for-headless-testing
     - *step-fix-known-hosts-linux
